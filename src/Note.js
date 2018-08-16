@@ -17,7 +17,7 @@ class Note extends Component {
 	}
 
 	delete() {
-		alert('Delete button clicked.');
+		this.props.onRemove(this.props.id);
 	}
 
 	save(e) {
